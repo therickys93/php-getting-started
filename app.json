@@ -5,5 +5,10 @@
   "success_url": "/",
   "addons": [{
       "plan": "heroku-postgresql"
-    }]
+    }],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
 }
