@@ -10,5 +10,8 @@
     {
       "url": "heroku/php"
     }
-  ]
+  ],
+  "scripts": {
+    "postdeploy": "psql $DATABASE_URL < https://raw.githubusercontent.com/therickys93/barorder/master/database/postgresql.sql"
+  }
 }
